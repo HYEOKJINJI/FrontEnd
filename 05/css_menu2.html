@@ -4,56 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css 를 사용한 상단 메뉴 - 드롭다운 메뉴</title>
+    <title>css_menu2 - left</title>
     <style>
-        /* 기본 셋팅된 내용을 리셋 */
-        * {margin: 0; padding: 0;}      /* 처음 시작시 기본셋팅, 기존 설정 리셋 */
-        li{list-style-type: none;}
+        /* 기존의 설정된 값들을 리셋 : */
+        * {margin: 0; padding: 0;}
+        li {list-style:none;}
         a:link{text-decoration: none; font-size: 14px;}
 
+        /* 수정 부분 시작 */
         .menu{
-            border: 1px solid red;
-            width: 800px;
-            overflow: hidden;
-            margin: 150px auto;
+            /* border: 1px solid red; */
+            width: 300px;
+            margin: 150px;
         }
-        .menu > li{     /* 직계 자손 */
-            /* border: 1px solid red;   */
-            width: 20%;     /* 5개 * 20% = 100% */
-            float: left;
+        .menu > li {    /* 집계 자손 */
+            /* float: left;        - 주석 처리  top 메뉴 구성 시 사용  */
             text-align: center;
+            width: 100%;
             line-height: 40px;
             background-color: #5778ff;
         }
-        .menu a{
-            color: white;   /* .menu 의 후손 a */
+        .menu a {       /* menu 후손 a */
+            color: white;
         }
         .submenu > li {
-            line-height: 50px;  
+            line-height: 50px;
             background-color: #94a9ff;
         }
 
-        /* submenu 는 기본 출력시 보이지 않게 처리 */
-        .submenu{
-            height: 0;      /* ul 의 높이를 0 으로 처리 하면 안보임 */
-            overflow: hidden;
+        /* submenu 는 기본적으로 보이지 않게 처리 */
+        .submenu {
+            height: 0;  
+            overflow: hidden;   /* 블락 밖으로 출력 되는 내용을 숨겨줌 */
         }
-
-        /* 마우스를 올렸을때 보이게 처리 */
+        
+        /* 마우스를 올렸을때 서브 메뉴를 보이도록 처리 */
         .menu > li:hover{
             background-color: #94a9ff;
-            transition-duration: 0.5s;   /* 애니메이션 효과 : 부드럽게 출력 */
+            transition-duration: 1.5s;
         }
         .menu > li:hover .submenu{
-            height: 250px;              /* 서브메뉴 1개 높이 50px * 5 = 250px */
-            transition-duration: 1s;
+            height: 250px;      /* submenu 를 보이도록 처리 */
+            transition-duration: 1.5s;      /* 전체 출력까지 인터벌 */
         }
 
-
+        /* 수정부분 끝 */
     </style>
 </head>
 <body>
-     <!-- overflow: hidden;  <== 박스 범위 박의 내용은 출력되지 않도록 설정 -->
+    <!-- overflow: hidden;  <== 박스 범위 박의 내용은 출력되지 않도록 설정 -->
+
     <ul class="menu">
         <li>
             <a href="#">MENU1</a>       <!-- 상위 메뉴 -->
