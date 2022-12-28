@@ -7,6 +7,10 @@
     <title>Document</title>
     <style>
         *{margin: 0; padding: 0;}
+        #page{
+            width: 1300px;
+            margin: 0 auto;
+        }
         html , body{
             height: 100%; width: 100%;
         }
@@ -21,6 +25,7 @@
             float: right;
             margin: 45px 20px 0 0;
             font-size: 12px;
+            
         }
         .rubato{
             border: 0px solid red;
@@ -38,13 +43,14 @@
             margin: 5px 5px 0 5px;
         }
         .mainmenu li{
+            width: 200px;
             float: left;
             margin: 30px;
         }
         .banner li{
             border: 0px solid red;
             float: left;
-            width: 345px;
+            width: 425px;
         }
         .font{
             font-size: 12px;
@@ -140,6 +146,7 @@
     </style>
 </head>
 <body>
+    <div id="page">
     <header>
         <ul>
             <li class="logo"><img src="./img/logo.gif"></li>
@@ -167,9 +174,9 @@
     
     <main>
         <ul class="banner">
-            <li><img src="./img/banner01.gif" width="350px" height="120px"></li>
-            <li><img src="./img/banner02.gif" width="350px" height="120px"></li>
-            <li><img src="./img/banner03.gif" width="350px" height="120px"></li>
+            <li><img src="./img/banner01.gif" width="400px" height="120px"></li>
+            <li><img src="./img/banner02.gif" width="400px" height="120px"></li>
+            <li><img src="./img/banner03.gif" width="400px" height="120px"></li>
         </ul>
         <div class="clear"></div>
         <ul class="center">
@@ -248,6 +255,7 @@
         </ul>
 
     </footer>
+</div>
     
 </body>
 </html>

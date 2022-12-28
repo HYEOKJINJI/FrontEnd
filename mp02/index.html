@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;font-size: 14px;}
+        #page{
+            width: 90%; height: 1200px;
+            border: 0px solid red;
+            margin: 0 auto;
+        }
+        #main_main a{
+            color: black;
+            font-size: 12px;
+            text-decoration: none;
+        }
+        li{
+            list-style-type: none;
+        }
+        header{
+            width: 100%;
+            height: 100px;
+        }
+        aside{
+            border: 0px solid red;
+            float: left;
+            width: 200px;
+            height: 1000px;
+
+        }
+        main{
+            height: 900px;
+            width: 100%-300px;
+            margin-left: 300px;
+        }
+        footer{
+            height: 10px;
+        }
+        header li {
+            float: left;
+        }
+        #logo{
+            margin: 10px;
+        }
+        #main_menu{
+            position: absolute;
+            border: 0px solid red;
+            margin-left: 200px;
+            margin-top: 40px;
+        }
+        #font_menu1{
+            border: 0px solid red;
+            margin-left: 580px;
+        }
+        aside ul{
+            display: inline-block;
+            margin-top: 20px;
+            width: 290px;
+            height: 150px;
+            border: 1px solid silver;
+            border-radius: 20px;
+            background-color: rgb(248, 246, 246);
+        }
+        #member{
+            font-size: 20px;
+            color: rgb(105, 149, 105);
+            margin: 10px;
+            font-weight: bold;
+        }
+        #login{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #text1 input{
+            position: absolute;
+            margin-left: 7px;
+            margin-top: 5px;
+            width: 150px;
+            height: 25px;
+        }
+        #text2 input{
+            position: absolute;
+            margin-left: 7px;
+            margin-top: 38px;
+            width: 150px;
+            height: 25px;
+        }
+        #btn_login{
+            position: absolute;
+            margin: 0 0 50px 175px;
+        }
+        #btn_join{
+            position: relative;
+            top: 80px;
+            left: 20px;
+        }
+        #btn_search{
+            position: relative;
+            top:58px;
+            left: 80px;
+        }
+        #ttl_memo{
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        #icon_blue{
+            
+            font-size: 15px;
+        }
+        #clear{
+            clear: both;
+        }
+        #ttl_memo2{
+            width: 230px;
+            margin: 5px 0 0 30px;
+            border-top: 1px solid silver;
+        }
+        #main_main{
+            
+        }
+        #lastest1{
+            border-bottom: 1px solid silver;
+            width: 350px;
+        }
+        #lastest2{
+            border-bottom: 1px solid silver;
+            width: 350px;
+        }
+        #more1{
+            margin-left: 150px;
+        }
+        #las_test1{
+            float: left;
+        }
+        #rubato4{
+            font-size: 12px;
+            margin: 5px;
+        }
+        #date{
+            margin-left: 10px;
+            font-size: 11px;
+            color: grey;
+        }
+        #rubato{
+            width: 360px;
+            height: 100px;
+        }
+        #boxline{
+            float: left;
+        }
+        #lastest3{
+            margin: 5px;
+            margin-left: 380px;
+            height: 15px;
+            width: 220px;
+            padding-left: 80px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid silver;
+        }
+        #more2{
+            margin-left: 40px;
+        }
+        #bach{
+            margin-top: 20px;
+            margin-left: 400px;
+        }
+        #lastest4{
+            margin-top: 10px;
+            width: 100px;
+        }
+        #gallery{
+            border: 1px solid silver;
+            border-radius: 20px;
+            width: 670px; height: 250px;
+        }
+        #img1{
+            margin: 15px;
+            float: left;
+            width: 189px;  height: 180px;
+            font-size: 12px;
+            text-align: center;
+        }
+        #footerline{
+            height: 100px;
+            width: 780px;
+        }
+        #footer_logo{
+            width: 780px;
+            height: 100px;
+            position: absolute;
+        }
+        footer > div{
+            display:inline-block;
+        }
+        #addr{
+            margin-left: 300px;
+        }
+        #fbt{
+            position: absolute;
+            margin: 0 0 0px 700px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="page">
+        <header>
+            <ul>
+                <li id="logo"><img src="img/logo.png" style="margin: 0;width: 100%; "></li>
+                <li id="main_menu"><img src="img/main_menu_bg.png"></li>
+               <span id="font_menu1"><span id="font_menu">HOME</span>
+                <span id="font_menu">|</span>
+                <span id="font_menu">LOGIN</span>
+                <span id="font_menu">|</span>
+                <span id="font_menu">JOIN</span>
+                <span id="font_menu">|</span>
+                <span id="font_menu">NOTICE</span>
+            </span>
+            </ul>
+        </header>
+        <aside>
+            <ul>
+                <li><span id="member">Member</span><span id="login">LOGIN</span> </li>
+                <li id="text1"><input type="text"></li>
+                <li id="text2"><input type="text"></li>
+                <li id="btn_login"><img src="img/btn_login.gif" style="width: 90px;"></li>
+                <li id="btn_join"><img src="img/btn_join.gif" style="width: 50px;"></li>
+                <li id="btn_search"><img src="img/btn_search.gif" style="width: 140px;"></li>
+            </ul>
+            <ul>
+                <li id="ttl_memo"><img src="img/ttl_memo.gif" style="width: 60px;"></li>
+                <div id="clear"></div>
+                <div id="ttl_memo2">
+                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
+                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
+                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
+                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
+            </div>
+            </ul>
+        </aside>
+        <main>
+            <div id="main_main">
+                <div id="main"><img src="img/main_img.png" style="width: 660px;height: 320px;"></div>
+            <div id="boxline">
+                <div id="lastest1"><span><img src="img/latest1.gif" style="width: 100px;"></span><span id="more1"><img src="img/more.gif" style="width: 40px;"></span></div>
+                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
+                <div id="rubato">
+                    <div id="rubato4">루바토 개편과 사이트 이용..<span id="date">2017-09-20</span></div>
+                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
+                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
+                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
+                    <div id="clear"></div>
+                </div>
+                <div id="lastest2"><img src="img/latest2.gif" style="width: 100px;"><span id="more1"><img src="img/more.gif" style="width: 40px;"></div>
+                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
+                <div id="rubato">
+                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
+                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
+                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
+                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
+                    <div id="clear"></div>
+                </div>
+            </div>
+                <div id="lastest3"><img src="img/latest3.gif" style="width: 120px;"><span id="more2"><img src="img/more.gif" style="width: 40px;"></div>
+                    <div id="bach"><img src="img/bach.jpg"></div>
+                    <div id="lastest4"><img src="img/latest4.gif"></div>
+                    <div id="gallery" style="height: 200px;"><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div></div>
+                    <div id="clear"></div>
+            </div>
+            <div id="clear"></div>
+        </main>
+        <footer>
+            <div id="footerline">
+                <div id="footer_logo"><img src="img/footer_logo.gif"></div>
+                <div id="addr">
+                    <div>서울시 강남구 삼성동 1234 우: 123-1234</div>
+                    <div>TEL: 031-123-1234 Email : email@domain.com</div>
+                    <div>COPYTIGHT (C) 루바트 ALL RIGHTS RESERVED</div>
+                </div>
+                <div id="fbt"><img src="img/facebook.gif"><img src="img/blog.gif"><img src="img/twitter.gif"></div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
