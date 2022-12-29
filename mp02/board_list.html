@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0; padding: 0;font-size: 14px;}
+  *{margin: 0; padding: 0;font-size: 14px;}
         #page{
-            width: 90%; height: 1200px;
+            width: 1000px; height: 1200px;
             border: 0px solid red;
             margin: 0 auto;
         }
@@ -16,6 +16,9 @@
             color: black;
             font-size: 12px;
             text-decoration: none;
+        }
+        #main{
+            margin-left: -200px;
         }
         li{
             list-style-type: none;
@@ -25,20 +28,86 @@
             height: 100px;
         }
         aside{
-            border: 0px solid red;
             float: left;
             width: 200px;
             height: 1000px;
 
         }
         main{
-            height: 900px;
-            width: 100%-300px;
-            margin-left: 300px;
+            position: absolute;
+            top: 100px;
+            left: 500px;
         }
         footer{
+            padding-left: 400px;
+            border-bottom: 1px solid silver;
             height: 10px;
         }
+        #font5{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 340px;
+        }
+        #font1{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 480px;
+        }
+        #font2{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 625px;
+        }
+        #font3{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 750px;
+        }
+        #font4{
+            position: absolute;
+            font-size: 15px;
+            margin-top: 26px;
+            margin-left: 880px;
+        }
+        #title{
+            border: 1px solid silver;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+        #font6{
+            position: absolute;
+            top: 390px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        #font7{
+            position: absolute;
+            top: 430px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        #font8{
+            position: absolute;
+            top: 470px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        #font9{
+            position: absolute;
+            top: 510px;
+            margin-left: 30px;
+            font-size: 18px;
+        }
+        #font10{
+            position: absolute;
+            top: 550px;
+            margin-left: 30px;
+            font-size: 18px;
+        }  
         header li {
             float: left;
         }
@@ -47,18 +116,17 @@
         }
         #main_menu{
             position: absolute;
-            border: 0px solid red;
-            margin-left:300px;
-            margin-top: 40px;
-          }
+            margin-left: 300px;
+            margin-top: 40px
+        }
         #font_menu1{
             border: 0px solid red;
-            margin-left: 580px;
+            margin-left: 600px;
         }
-        #log{
+        aside ul{
             display: inline-block;
             margin-top: 20px;
-            width: 290px;
+            width: 200px;
             height: 150px;
             border: 1px solid silver;
             border-radius: 20px;
@@ -78,135 +146,106 @@
             position: absolute;
             margin-left: 7px;
             margin-top: 5px;
-            width: 150px;
+            width: 80px;
             height: 25px;
         }
         #text2 input{
             position: absolute;
             margin-left: 7px;
             margin-top: 38px;
-            width: 150px;
+            width: 80px;
             height: 25px;
         }
         #btn_login{
             position: absolute;
-            margin: 0 0 50px 175px;
+            margin: 0 0 50px 105px;
         }
         #btn_join{
             position: relative;
             top: 80px;
-            left: 20px;
+            left: 10px;
         }
         #btn_search{
             position: relative;
-            top:58px;
-            left: 80px;
+            top:60px;
+            left: 60px;
         }
         #ttl_memo{
             margin-left: 20px;
             margin-top: 10px;
         }
-        #icon_blue{
-            
+        header div{
+            color: white;
+        }
+        #free{
+            position: absolute;
+            font-size: 20px;
+            font-weight: bold;
+            padding-bottom: 5px;
+            border-bottom: 1px solid silver;
+        }
+        #free2{
+            margin-top: 360px;
             font-size: 15px;
+            float: left;
         }
-        #clear{
-            clear: both;
+        #select{
+            position: absolute;
+            margin-left: -550px;
+            margin-top: 336px;
         }
-        #ttl_memo2{
-            width: 230px;
-            margin: 5px 0 0 30px;
-            border-top: 1px solid silver;
+        div > select{
+            margin-top: 10px;
+            margin-left: 250px;
         }
-        #main_main{
+        #search{
+            position: absolute;
+            margin-left: 195px;
             
         }
-        #lastest1{
-            border-bottom: 1px solid silver;
-            width: 350px;
+        #search2{
+            position: absolute;
+            top: 332px;
+            left: 620px;
         }
-        #lastest2{
-            border-bottom: 1px solid silver;
-            width: 350px;
-        }
-        #more1{
-            margin-left: 150px;
-        }
-        #las_test1{
-            float: left;
-        }
-        #rubato4{
-            font-size: 12px;
-            margin: 5px;
-        }
-        #date{
-            margin-left: 10px;
-            font-size: 11px;
-            color: grey;
-        }
-        #rubato{
-            width: 360px;
-            height: 100px;
-        }
-        #boxline{
-            float: left;
-        }
-        #lastest3{
-            margin: 5px;
-            margin-left: 380px;
-            height: 15px;
-            width: 220px;
-            padding-left: 80px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid silver;
-        }
-        #more2{
-            margin-left: 40px;
-        }
-        #bach{
-            margin-top: 20px;
-            margin-left: 400px;
-        }
-        #lastest4{
-            margin-top: 10px;
-            width: 100px;
-        }
-        #gallery{
-            border: 1px solid silver;
-            border-radius: 20px;
-            width: 670px; height: 250px;
-        }
-        #img1{
-            margin: 15px;
-            float: left;
-            width: 189px;  height: 180px;
-            font-size: 12px;
+        table{
+            margin-top: 60px;
             text-align: center;
         }
-        #footerline{
+        table th{
+            background-color: silver;
+        }
+        table td{
+            margin: 0;
+            font-size: 15px;
+            border-bottom: 1px solid silver;
+        }
+        #mainpage{
+            margin-left: 300px;
+            font-size: 15px;
+        }
+        #list2, #write2{
+            margin-left: 550px;
+        }
+                #footerline{
             height: 100px;
-            width: 780px;
+            width: 750px;
+            padding-top: 50px;
         }
         #footer_logo{
             width: 780px;
             height: 100px;
             position: absolute;
+            margin-left: 100px;
         }
         footer > div{
             display:inline-block;
         }
         #addr{
-            margin-left: 300px;
+            margin-left: 350px;
         }
         #fbt{
-            position: absolute;
-            margin: 0 0 0px 700px;
-        }
-        #title{
-            width: 300px;
-            border: 1px solid silver;
-            border-radius: 15px;
-            text-align: center;
+            float: right;
         }
 
     </style>
@@ -224,6 +263,11 @@
                 <span id="font_menu">JOIN</span>
                 <span id="font_menu">|</span>
                 <span id="font_menu">NOTICE</span>
+                <div id="font5"><a href="http://192.168.64.1:5500/mp02/board_list.html" target="_self">자유 게시판</a></div>
+                <div id="font1">기타 연주</div>
+                <div id="font2">공통 구매</div>
+                <div id="font3">연주회 안내</div>
+                <div id="font4">회원 게시판</div>
             </span>
             </ul>
         </header>
@@ -234,11 +278,16 @@
                 <li id="text2"><input type="text"></li>
                 <li id="btn_login"><img src="img/btn_login.gif" style="width: 90px;"></li>
                 <li id="btn_join"><img src="img/btn_join.gif" style="width: 50px;"></li>
-                <li id="btn_search"><img src="img/btn_search.gif" style="width: 140px;"></li>
+                <li id="btn_search"><img src="img/btn_search.gif" style="width: 120px;"></li>
             </ul>
             <ul>
                 <li>
-                    <img src="img/sub_menu_bg.png" style="width: 300px; height: 400px;">
+                    <img src="img/sub_menu_bg.png" style="width: 200px; height: 350px;">
+                    <div id="font6"><a href="http://192.168.64.1:5500/mp02/board_list.html" target="_self">+ 자유게시판</a></div>
+                    <div id="font7">+ 방명록</div>
+                    <div id="font8">+ 공지사항</div>
+                    <div id="font9">+ 등업 요청</div>
+                    <div id="font10">+ 포토갤러리</div>
                 </li>
             <div id="title">
                 <div><img src="img/banner1.png"></div>
@@ -249,38 +298,34 @@
             </ul>
         </aside>
         <main>
-            <div id="main_main">
-                <div id="main"><img src="img/comm.gif"> style="width: 660px;height: 320px;"></div>
-            <div id="boxline">
-                <div id="lastest1"><span><img src="img/latest1.gif" style="width: 100px;"></span><span id="more1"><img src="img/more.gif" style="width: 40px;"></span></div>
-                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
-                <div id="rubato">
-                    <div id="rubato4">루바토 개편과 사이트 이용..<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="clear"></div>
+            <div>
+                <img src="img/comm.gif" style="width: 700px;height: 320px;" id="main">
+                <div id="free">자유 게시판</div>
+                <span id="free2">▷ 총 5개의 게시물이 있습니다.</span>
+                <span id="select"><img src="img/select_search.gif"></span>
+                <div id="search">
+                    <select style="width: 60px;height: 25px;">
+                        <option value="title"selected>제목</option>
+                        <option value="writter">글쓴이</option>
+                    </select>
+                    <input type="text" style="width: 100px;height: 18px;"> 
                 </div>
-                <div id="lastest2"><img src="img/latest2.gif" style="width: 100px;"><span id="more1"><img src="img/more.gif" style="width: 40px;"></div>
-                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
-                <div id="rubato">
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="clear"></div>
-                </div>
+                <img src="img/search_button.gif" style="width: 60px;" id="search2">
+                <div>
+                    <table style="width: 700px;height: 200px;">
+                        <tr><th>번호</th><th>제목</th><th>글쓴이</th><th>일시</th><th>조회수</th></tr>
+                        <tr id="line"><td>1</td><td><a href="http://192.168.64.1:5500/mp02/board_view.html" target="_self"> 까스릉님의 선물인 보드카가 정말 독하네요!!</a></td><td>루바트</td><td>2017-09-20</td><td>15</td></tr>
+                        <tr id="line"><td>2</td><td><a href="http://192.168.64.1:5500/mp02/board_view.html" target="_self">까스릉님의 선물인 보드카가 정말 독하네요!!</a></td><td>루바트</td><td>2017-09-20</td><td>15</td></tr>
+                        <tr id="line"><td>3</td><td><a href="http://192.168.64.1:5500/mp02/board_view.html" target="_self">까스릉님의 선물인 보드카가 정말 독하네요!!</a></td><td>루바트</td><td>2017-09-20</td><td>15</td></tr>
+                    </table>
+                    <span id="mainpage">◀ 이전 1 다음 ▶</span>
+                    <div id="list2"><a href="http://192.168.64.1:5500/mp02/board_list.html" target="_self"><img src="img/list.png" style="width: 54px;"></a> &nbsp;<img src="img/write.png"></div>
+               </div>
             </div>
-                <div id="lastest3"><img src="img/latest3.gif" style="width: 120px;"><span id="more2"><img src="img/more.gif" style="width: 40px;"></div>
-                    <div id="bach"><img src="img/bach.jpg"></div>
-                    <div id="lastest4"><img src="img/latest4.gif"></div>
-                    <div id="gallery" style="height: 200px;"><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div></div>
-                    <div id="clear"></div>
             </div>
-            <div id="clear"></div>
         </main>
         <footer>
-            <div id="footerline">
+            <div id= "footerline">
                 <div id="footer_logo"><img src="img/footer_logo.gif"></div>
                 <div id="addr">
                     <div>서울시 강남구 삼성동 1234 우: 123-1234</div>
