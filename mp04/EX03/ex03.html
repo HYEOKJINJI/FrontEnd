@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0 auto; padding: 0;}
+        header{width: 90%;}
+        main{width: 90%;}
+        footer{width: 90%;}
+        header #shop{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-size: 50px;
+        }
+        header #subshop{
+            background-color: rgb(123, 123, 207);
+            opacity: 0.6;
+            color: white;
+            font-size: 25px;
+
+        }
+        #subshop div{
+            display: inline-block;
+            text-align: center;
+            margin-left: 10%;
+        }
+        #log{
+            height: 550px;
+            text-align: center;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 30px;
+            background-color: rgb(232, 229, 229);
+        }
+        table tr{
+            font-size: 20px;
+        }
+        table{
+            width: 700px;
+            height: 400px;
+            margin-top: 30px;
+            border-style: double;
+        }
+        #line{
+            border: 1px double silver;
+        }
+        #text{
+            vertical-align: middle;
+            margin-top: -5px;
+        }
+        #button{
+            float: right;
+        }
+        footer div{
+            font-size: 19px;
+            color: white;
+            background: linear-gradient(90deg, blue, rgb(161, 161, 215));
+            height: 60px;
+            padding-left: 20px;
+            padding-top: 30px;
+        }
+        @media only screen  and (max-width: 700px){ 
+            #c{
+                width: 100%;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <header>
+            <div id="shop">쇼핑몰 회원관리 VER 1.0</div>
+            <div id="subshop"><div id="c">회원등록</div><div id="c">회원목록조회/수정</div><div id="c">회원매출조회</div><div id="c">홈으로</div></div>
+        </header>
+        <main>
+            <div id="log">쇼핑몰 회원 등록
+            <table id="c">
+                <tr><div><th id="line">회원번호(자동발생)</th><td id="line"><input type="text" id="text"></td></tr>
+                <tr><th id="line">회원성명</th><td id="line"><input type="text"  id="text"></td></tr>
+                <tr><th id="line">회원주소</th><td id="line"><input type="text" id="text"></td></tr>
+                <tr><th id="line">가입일자</th><td id="line"><input type="text" id="text"></td></tr>
+                <tr><th id="line">고객등급[A:VIP,B:일반,C:직원]</th><td id="line"><input type="text" id="text"></td></tr>
+                <tr><th id="line">도시코드</th><td id="line"><input type="text" id="text"></td></tr>
+                <tr><th id="button"><input type="button" value="등록"><input type="button" value="조회"></th></tr>
+            </table>
+            </div>
+        </main>
+        <footer>
+            <div>HRDKOREA Copyright@2016 All rights reserve. Human Resources Develpment Service of korea</div>
+        </footer>
+    </div>
+    
+</body>
+</html>

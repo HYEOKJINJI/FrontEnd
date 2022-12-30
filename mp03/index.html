@@ -9,7 +9,6 @@
         * {margin: 0; padding: 0;}
         #wrap{width: 1500px; margin: 0 auto;}
         header{
-            border: 1px solid red;
             height: 90px
         }
         header div{
@@ -18,6 +17,8 @@
         #search{
             margin: 20px 0 0 300px;
         }
+        #search > span{
+        }
         #log{
             margin: 20px 0 0 300px;
         }
@@ -25,7 +26,6 @@
             margin-right: 30px;
         }
         #submenu{
-            border:1px solid red;
             margin: 5px 0 0 0px;
             height: 30px;
             padding-top: 10px;
@@ -33,7 +33,6 @@
             width: 1500px;
         }
         #submenu > div{
-            border: 1px solid red;
             margin: 0 50px 0 150px;
             color: white;
         }
@@ -45,12 +44,11 @@
         }
         #category{
             margin-top: 20px;
-            border: 1px solid red;
             width: 300px;
             font-size: 20px;
         }
         #categoryitem{
-            background-color: greenyellow;
+            background-color: rgb(137, 186, 64);
             color: white;
             font-size: 20px;
             font-weight: bold;
@@ -62,14 +60,26 @@
             border-bottom: 1px solid silver;
             padding-left: 20px;
         }
+        #bluefont{
+            margin: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
         #main{
-            border: 1px solid red;
             margin-top: 20px;
         }
         #notice{
-            border: 1px solid red;
             position: absolute;
             z-index: -1;
+        }
+        #event{
+            position: absolute;
+            z-index: -1;
+        }
+        #event2{
+            z-index: 1;
+            margin-left: 25px;
+            margin-top: 50px;
         }
         #notice div{
             z-index: 1;
@@ -77,6 +87,135 @@
         footer{
             border: 0px solid red;
         }
+        #special{
+            margin: 20px 600px 0 0;
+            
+            display: inline;
+        }
+        #special div{
+            display: inline;
+        }
+        #shop{
+            position: absolute;
+            z-index: -1;
+        }
+        #shop1{
+            border: 1px solid silver;
+            margin: 65px 0 0 30px;
+            padding: 10px;
+        }
+        #shop2{
+            border: 1px solid silver;
+            padding: 10px;
+        }
+        #land{
+            margin-left:920px;
+            margin-top: -340px;
+        }
+        #scape{
+            position: absolute;
+            z-index: -1;
+        }
+        #scape1{
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+        #scape2{
+            margin-left: 390px;
+            position: absolute;
+            margin-top: -85px;
+        }
+        #point{
+            margin-top: 20px;
+        }
+        #point1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #point2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #children{
+            margin-top: 5px;
+        }
+        #children1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #children2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #greenline{
+            border-bottom: 2px solid rgb(137, 186, 64);
+            margin-left: -920px;
+            padding-top: 30px;
+        }
+        #arrival{
+            padding-top: 20px;
+            font: 15px bold;
+            color: rgb(137, 186, 64);
+            float: left;
+            margin-left: 80px;
+        }
+        #arrival1{
+            padding-top: 20px;
+        }
+        #new div{
+            float: left;
+        }
+        #clear{
+            clear: both;
+        }
+        #new{
+            margin-top: 20px;
+        }
+        #new div{
+            margin: 0 80px 0 80px;
+        }
+        p{
+            text-align: center;
+        }
+        #title1{
+            color: rgb(137, 186, 64);
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        #title2{
+            color: silver;
+        }
+        #footersub{
+            margin-top: 30px;
+            background-color: grey;
+            color: white;
+            height: 30px;
+            text-align: center;
+        }
+        #footersub span{
+            margin: 30px;
+            line-height: 30px;
+        }
+        #footermain div{
+            float: left;
+        }
+        #footerlogo{
+            margin: 50px;
+        }
+        #addr{
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        #footersublogo{
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        
+
     </style>
 </head>
 <body>
@@ -84,7 +223,7 @@
         <header>
             <div>
                 <div><img src="img/logo.gif"></div>
-                <div id="search">SEARCH<input type="text"><img src="img/btn_search.gif"></div>
+                <div id="search"><span>SEARCH</span><span><input type="text"></span><span><img src="img/btn_search.gif"></span></div>
                 <div id="log">
                     <div>로그인</div>
                     <div>회원가입</div>
@@ -119,8 +258,8 @@
                 <img src="img/main_img.gif" id="main" style="width: 900px;height: 350px;">
             </section>
             <section>
-                <div><img src="img/latest_notice.gif" id="notice" style="width: 300px;">
-                    <div>
+                <div><img src="img/latest_notice.gif" id="notice" style="width: 300px; height: 175px;">
+                    <div id="bluefont">
                         <div><img src="img/blue_dot.gif">폭설로 인한 배송지연 안내</div>
                         <div><img src="img/blue_dot.gif">폭설로 인한 배송지연 안내</div>
                         <div><img src="img/blue_dot.gif">폭설로 인한 배송지연 안내</div>
@@ -131,12 +270,73 @@
                 </div>
             </section>
             <section>
-                <div><img src="img/week_event.gif">
-                    <div><img src="img/week_event_img.gif"></div>
+                <div><img src="img/week_event.gif" id="event" style="width: 300px;  height: 175px;">
+                    <div><img src="img/week_event_img.gif" id="event2" style="height:120px; width: 250px;"></div>
+                </div>
+            </section>
+            <section id="special">
+                <div><img src="img/special_shop.gif" style="width: 900px;height: 350px;" id="shop">
+                    <div><img src="img/special_img1.gif" id="shop1" style="width:400px; height: 250px;"></div>
+                    <div><img src="img/special_img2.gif" id="shop2" style="width:400px; height: 250px;"></div>
+                </div>
+            </section>
+            <section id="land">
+                <div><img src="img/landscape.gif" id="scape" style="width: 580px; height: 110px;">
+                    <div><img src="img/landscape_img1.gif" id="scape1" style="width: 175px; height: 80px;"></div>
+                    <div><img src="img/landscape_img2.gif" id="scape2" style="width: 175px; height: 80px;"></div>
+                </div>
+                <div><img src="img/point_wallpaper.gif" id="point" style="width: 580px; height: 110px;">
+                    <div><img src="img/point_wallpaper_img1.gif" id="point1"  style="width: 175px; height: 80px;"></div>
+                    <div><img src="img/point_wallpaper_img2.gif" id="point2"  style="width: 175px; height: 80px;"></div>
+                </div>
+                <div><img src="img/children.gif" id="children" style="width: 580px; height: 110px;">
+                    <div><img src="img/children_img1.gif" id="children1" style="width: 175px; height: 80px;"></div>
+                    <div><img src="img/children_img2.gif" id="children2" style="width: 175px; height: 80px;"></div>
+                </div>
+                <div id="greenline"></div>
+            </section>
+            <section>
+                <div id="arrival">NEW ARRIVAL</div><div id="arrival1">신규 상품</div>
+                <div id="clear"></div>
+                <div id="new">
+                    <div><img src="img/new_01.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_02.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_03.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_04.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div id="clear"></div>
+                    <div><img src="img/new_05.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_06.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_07.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div><img src="img/new_08.jpg">
+                        <span id="title"><p id="title1">맞춤제작(풍경)</p><p id="title2">원하는 사이즈로 제작 가능</p><p id="title3">20,000원</p></span>
+                    </div>
+                    <div id="clear"></div>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <div id="clear"></div>
+        <footer>
+            <div id="footersub"><span>회사소개</span><span>이용안내</span><span>장바구니</span><span>주문조회</span><span>적립금</span><span>이용약관</span><span>개인정보보호정책</span><span>고객센터</span></div>
+            <div id="footermain">
+                <div id="footerlogo"><img src="img/footer_logo.gif"></div>
+                <div id="addr"><img src="img/address.gif"></div>
+                <div id="footersublogo"><img src="img/footer_banner_01.gif"></div>
+            </div>
+        </footer>
     </div>
     
 </body>

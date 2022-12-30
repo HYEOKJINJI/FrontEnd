@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap{width: 1500px; margin: 0 auto;}
+        header{
+            height: 90px
+        }
+        header div{
+            float: left;
+        }
+        #search{
+            margin: 20px 0 0 300px;
+        }
+        #search > span{
+        }
+        #log{
+            margin: 20px 0 0 300px;
+        }
+        #log >div{
+            margin-right: 30px;
+        }
+        #submenu{
+            margin: 5px 0 0 0px;
+            height: 30px;
+            padding-top: 10px;
+            background-color: grey;
+            width: 1500px;
+        }
+        #submenu > div{
+            margin: 0 50px 0 150px;
+            color: white;
+        }
+        main{
+            border: 0px solid red;
+        }
+        section{
+            float: left;
+        }
+        #category{
+            margin-top: 20px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #categoryitem{
+            background-color: rgb(137, 186, 64);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #font{
+            border-bottom: 1px solid silver;
+            padding-left: 20px;
+        }
+        #bluefont{
+            margin: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        #main{
+            margin-top: 20px;
+        }
+        #notice{
+            position: absolute;
+            z-index: -1;
+        }
+        #event{
+            position: absolute;
+            z-index: -1;
+        }
+        #event2{
+            z-index: 1;
+            margin-left: 25px;
+            margin-top: 50px;
+        }
+        #notice div{
+            z-index: 1;
+        }
+        footer{
+            border: 0px solid red;
+        }
+        #special{
+            margin: 20px 600px 0 0;
+            
+            display: inline;
+        }
+        #special div{
+            display: inline;
+        }
+        #shop{
+            position: absolute;
+            z-index: -1;
+        }
+        #shop1{
+            border: 1px solid silver;
+            margin: 65px 0 0 30px;
+            padding: 10px;
+        }
+        #shop2{
+            border: 1px solid silver;
+            padding: 10px;
+        }
+        #land{
+            margin-left:920px;
+            margin-top: -340px;
+        }
+        #scape{
+            position: absolute;
+            z-index: -1;
+        }
+        #scape1{
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+        #scape2{
+            margin-left: 390px;
+            position: absolute;
+            margin-top: -85px;
+        }
+        #point{
+            margin-top: 20px;
+        }
+        #point1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #point2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #children{
+            margin-top: 5px;
+        }
+        #children1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #children2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #greenline{
+            border-bottom: 2px solid rgb(137, 186, 64);
+            margin-left: -920px;
+            padding-top: 30px;
+        }
+        #arrival{
+            padding-top: 20px;
+            font: 15px bold;
+            color: rgb(137, 186, 64);
+            float: left;
+            margin-left: 80px;
+        }
+        #arrival1{
+            padding-top: 20px;
+        }
+        #new div{
+            float: left;
+        }
+        #clear{
+            clear: both;
+        }
+        #new{
+            margin-top: 20px;
+        }
+        #new div{
+            margin: 0 80px 0 80px;
+        }
+        p{
+            text-align: center;
+        }
+        #title1{
+            color: rgb(137, 186, 64);
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        #title2{
+            color: silver;
+        }
+        #footersub{
+            margin-top: 30px;
+            background-color: grey;
+            color: white;
+            height: 30px;
+            text-align: center;
+        }
+        #footersub span{
+            margin: 30px;
+            line-height: 30px;
+        }
+        #footermain div{
+            float: left;
+        }
+        #footerlogo{
+            margin: 50px;
+        }
+        #addr{
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        #footersublogo{
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        #customer{
+            margin-top: 30px;
+            border: 1px solid silver;
+            width: 280px;
+            padding-left: 20px;
+        }
+        #mural{
+            margin-top: 35px;
+            margin-left: 30px;
+            border-bottom: 3px solid grey;
+            width: 1170px;
+            padding-bottom: 10px;
+        }
+        #mural1{
+            color: rgb(137, 186, 64);
+            padding-right: 10px;
+        }
+        #mural2{
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        #mural3{
+            margin-left: 230px;
+        }
+        #grey{
+            float: right;
+            margin-top: -370px;
+        }
+        #greytitle{
+            border-bottom:1px solid grey;
+            font-weight: bold;
+            padding-bottom: 10px;
+            width: 500px;
+            font-size: 20px;
+        }
+        td{
+            padding-left: 50px;
+            font-size: 15px;
+            color: silver;
+        }
+        #greyline{
+            margin-top: 20px;
+        }
+        #buy, #cart{
+            margin: 10px;
+        }
+        #bc{
+            float: right;
+        }
+        #ptoductt{
+            margin-top: 30px;
+            margin-left: 20px;
+            padding-bottom: 10px;
+            width: 800px;
+            border-bottom: 2px solid grey;
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div>
+                <div><img src="img/logo.gif"></div>
+                <div id="search"><span>SEARCH</span><span><input type="text"></span><span><img src="img/btn_search.gif"></span></div>
+                <div id="log">
+                    <div>로그인</div>
+                    <div>회원가입</div>
+                    <div>마이페이지</div>
+                    <div>이용안내</div>
+                    <div>고객센터</div>
+                </div>
+            </div>
+            <div id="submenu">
+                <div>상세 페이지</div>
+                <div>장바구니</div>
+                <div>고객 갤러리</div>
+                <div>주문배송</div>
+                <div>자주 하는 질문</div>
+            </div>
+        </header>
+        <main>
+            <section id="category"><div id="categoryitem">CATEGORY ITEM</div>
+                <div id="font">생활 아트</div>
+                <div id="font">캔버스 아트</div>
+                <div id="font">사진 벽지</div>
+                <div id="font">창문형/현관문형</div>
+                <div id="font">포인트 벽지</div>
+                <div id="font">세계지도</div>
+                <div id="font">앤티크 세계지도 벽지</div>
+                <div id="font">입체 세계지도 벽지</div>
+                <div id="font">어린이방 세계지도</div>
+                <div id="font">족자형 롤스크린</div>
+                <div id="font">맞춤제작 결제창</div>
+                <div id="customer"><img src="img/customer.png" width="270px" height="80px"></div>
+            </section>
+            <section id="pm">
+                <div id="mural"><span id="mural1">POINT MURAL</span><span>포인트 뮤럴 벽지</span></div>
+                <div>
+                    <div id="mural2"><img src="img/point_wallpaper_img1.gif" width="600px" height="340px"></div>
+                    <div id="mural3"><span><img src="img/btn_pre.gif"></span><span><img src="img/btn_show_big.gif"><span><img src="img/btn_next.gif"></span></div>
+                </div>
+            </section>
+            <section id="grey">
+                <div id="greytitle">[맞춤제작] 화조도-2(연그레이)</div>
+                <table>
+                    <tr><div id="greyline"><td>판매가</td><td>23,000원</td></div></tr>
+                    <tr><td>제조사</td><td>다연아트</td></tr>
+                    <tr><td>특징</td><td>원하는 사이즈로 제작 가능</td></tr>
+                    <tr><td>수량</td><td><input type="text"></td></tr>
+                    <tr><div><td>재질</td><td><select>
+                        <option value="option1">==옵션선택==</option>
+                        <option value="option2">==옵션선택2==</option>
+                        <option value="option3">==옵션선택3==</option>
+                    </select></td></div></tr>
+                    <tr><td>주문 사이즈</td><td><input type="text">cm</td></tr>
+                    <tr><td>금액</td><td><input type="text">원</td></tr>
+                </table>
+                <div id="bc"><img src="img/btn_buy_now.gif" id="buy"><img src="img/btn_cart.gif" id="cart"></div>
+            </section>
+            <section id="ptoductt">
+                상품설명
+            </section>
+            <div id="clear"></div>
+            <div>"다연아트는 맞춤형 주문 제작 방식을 사용합니다."</div>
+
+        </main>
+        <div id="clear"></div>
+        <footer>
+            <div id="footersub"><span>회사소개</span><span>이용안내</span><span>장바구니</span><span>주문조회</span><span>적립금</span><span>이용약관</span><span>개인정보보호정책</span><span>고객센터</span></div>
+            <div id="footermain">
+                <div id="footerlogo"><img src="img/footer_logo.gif"></div>
+                <div id="addr"><img src="img/address.gif"></div>
+                <div id="footersublogo"><img src="img/footer_banner_01.gif"></div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
