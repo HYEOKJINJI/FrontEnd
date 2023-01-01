@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        #wrap{width: 1500px; margin: 0 auto;}
+        header{
+            height: 90px
+        }
+        header div{
+            float: left;
+        }
+        #search{
+            margin: 20px 0 0 300px;
+        }
+        #search > span{
+        }
+        #log{
+            margin: 20px 0 0 300px;
+        }
+        #log >div{
+            margin-right: 30px;
+        }
+        #submenu{
+            margin: 5px 0 0 0px;
+            height: 30px;
+            padding-top: 10px;
+            background-color: grey;
+            width: 1500px;
+        }
+        #submenu > div{
+            margin: 0 50px 0 150px;
+            color: white;
+        }
+        main{
+            border: 0px solid red;
+        }
+        section{
+            float: left;
+        }
+        #category{
+            margin-top: 20px;
+            width: 300px;
+            font-size: 20px;
+        }
+        #categoryitem{
+            background-color: rgb(137, 186, 64);
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            height: 40px;
+            text-align: center;
+            padding-top: 10px;
+        }
+        #font{
+            border-bottom: 1px solid silver;
+            padding-left: 20px;
+        }
+        #bluefont{
+            margin: 20px;
+            padding-top: 30px;
+            padding-left: 20px;
+        }
+        #main{
+            margin-top: 20px;
+        }
+        #notice{
+            position: absolute;
+            z-index: -1;
+        }
+        #event{
+            position: absolute;
+            z-index: -1;
+        }
+        #event2{
+            z-index: 1;
+            margin-left: 25px;
+            margin-top: 50px;
+        }
+        #notice div{
+            z-index: 1;
+        }
+        footer{
+            border: 0px solid red;
+        }
+        #special{
+            margin: 20px 600px 0 0;
+            
+            display: inline;
+        }
+        #special div{
+            display: inline;
+        }
+        #shop{
+            position: absolute;
+            z-index: -1;
+        }
+        #shop1{
+            border: 1px solid silver;
+            margin: 65px 0 0 30px;
+            padding: 10px;
+        }
+        #shop2{
+            border: 1px solid silver;
+            padding: 10px;
+        }
+        #land{
+            margin-left:920px;
+            margin-top: -340px;
+        }
+        #scape{
+            position: absolute;
+            z-index: -1;
+        }
+        #scape1{
+            margin-left: 200px;
+            margin-top: 15px;
+        }
+        #scape2{
+            margin-left: 390px;
+            position: absolute;
+            margin-top: -85px;
+        }
+        #point{
+            margin-top: 20px;
+        }
+        #point1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #point2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #children{
+            margin-top: 5px;
+        }
+        #children1{
+            position: absolute;
+            margin-left:200px;
+            margin-top: -100px;
+        }
+        #children2{
+            position: absolute;
+            margin-left:390px;
+            margin-top: -100px;
+        }
+        #greenline{
+            border-bottom: 2px solid rgb(137, 186, 64);
+            margin-left: -920px;
+            padding-top: 30px;
+        }
+        #arrival{
+            padding-top: 20px;
+            font: 15px bold;
+            color: rgb(137, 186, 64);
+            float: left;
+            margin-left: 80px;
+        }
+        #arrival1{
+            padding-top: 20px;
+        }
+        #new div{
+            float: left;
+        }
+        #clear{
+            clear: both;
+        }
+        #new{
+            margin-top: 20px;
+        }
+        #new div{
+            margin: 0 80px 0 80px;
+        }
+        p{
+            text-align: center;
+        }
+        #title1{
+            color: rgb(137, 186, 64);
+            font-weight: bold;
+            padding-top: 5px;
+        }
+        #title2{
+            color: silver;
+        }
+        #footersub{
+            margin-top: 30px;
+            background-color: grey;
+            color: white;
+            height: 30px;
+            text-align: center;
+        }
+        #footersub span{
+            margin: 30px;
+            line-height: 30px;
+        }
+        #footermain div{
+            float: left;
+        }
+        #footerlogo{
+            margin: 50px;
+        }
+        #addr{
+            margin-top: 40px;
+            margin-left: 100px;
+        }
+        #footersublogo{
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        #customer{
+            margin-top: 30px;
+            border: 1px solid silver;
+            width: 280px;
+            padding-left: 20px;
+        }
+        #shoppingcart{
+            border-bottom: 3px solid grey;
+            margin-top: 30px;
+            margin-left: 20px;
+            width: 1150px;
+            padding-bottom: 5px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #cartcolor{
+            color: rgb(137, 186, 64);
+        }
+        #cartcolor2{
+            padding-left: 20px;
+        }
+        #process{
+            margin-left: 20px;
+            margin-top: 10px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+        }
+        #table1{
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+            border-bottom: 1px solid silver;
+            border-top: 5px solid  rgb(137, 186, 64);
+            width: 1100px;
+            margin-left: 350px;
+        }
+        #table2{
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+            border-bottom: 1px solid silver;
+            width: 1100px;
+            margin-left: 350px;
+            background-color: rgba(192, 192, 192, 0.455);
+            height: 130px;
+        }
+        #choice{
+            float: left;
+            width: 100px;
+
+        }
+        #table1 th{
+            margin: 10px;
+        }
+        #table1 td{
+            height: 70px;
+            text-align: center;
+            border-bottom: 1px solid silver;
+        }
+        #pdname{
+            width: 500px;
+        }
+        #price{
+            width: 100px;
+        }
+        #num{
+            width: 100px;
+        }
+        #price3{
+            margin-top: 0;
+            margin-left: 350px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left:580px;
+            width: 518px;
+            border-left: 1px solid silver;
+            border-right: 1px solid silver;
+            border-bottom: 1px solid silver;
+        }
+        #tbl1{
+            padding-top: 10px;
+           float: right;
+        }
+        #tbl2{
+            padding-left: 20px;
+            font-weight: bold;
+        }
+        #orderbtn div{
+            display: inline-block;
+        }
+        #orderbtn{
+            margin-left: 450px;
+            margin-top: 30px;
+        }
+       
+        
+        
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <div>
+                <div><img src="img/logo.gif"></div>
+                <div id="search"><span>SEARCH</span><span><input type="text"></span><span><img src="img/btn_search.gif"></span></div>
+                <div id="log">
+                    <div>로그인</div>
+                    <div>회원가입</div>
+                    <div>마이페이지</div>
+                    <div>이용안내</div>
+                    <div>고객센터</div>
+                </div>
+            </div>
+            <div id="submenu">
+                <div>상세 페이지</div>
+                <div>장바구니</div>
+                <div>고객 갤러리</div>
+                <div>주문배송</div>
+                <div>자주 하는 질문</div>
+            </div>
+        </header>
+        <main>
+            <section id="category"><div id="categoryitem">CATEGORY ITEM</div>
+                <div id="font">생활 아트</div>
+                <div id="font">캔버스 아트</div>
+                <div id="font">사진 벽지</div>
+                <div id="font">창문형/현관문형</div>
+                <div id="font">포인트 벽지</div>
+                <div id="font">세계지도</div>
+                <div id="font">앤티크 세계지도 벽지</div>
+                <div id="font">입체 세계지도 벽지</div>
+                <div id="font">어린이방 세계지도</div>
+                <div id="font">족자형 롤스크린</div>
+                <div id="font">맞춤제작 결제창</div>
+                <div id="customer"><img src="img/customer.png" width="270px" height="80px"></div>
+            </section>
+            <section>
+                <div id="shoppingcart"><span id="cartcolor">SHOPPING CART</span><span id="cartcolor2">장바구니</span></div>
+                <div id="process"><img src="img/process.png" width="1100px" height="60px"></div>
+            </section>
+            <sectrion>
+                <table id="table1">
+                    <tr><th id="choice">선택</th><th id="pdname">상품명</th><th id="price">판매가</th><th id="num">수량</th><th id="num">적립금</th><th id="num">배송비</th><th id="num">합계</th></tr>
+                    <tr><td><input type="checkbox"></td><td>sjdy-005 펄실크 벽지/가로 125cm*세로 90cm</td><td>19,000원</td><td><input type="checkbox" value="수정"><input type="button" value="수정"></td><td>100원</td><td>3,000원</td><td>22,000원</td></tr>
+                    <tr><td><input type="checkbox"></td><td>sjdy-005 펄실크 벽지/가로 125cm*세로 90cm</td><td>19,000원</td><td><input type="checkbox" value="수정"><input type="button" value="수정"></td><td>100원</td><td>3,000원</td><td>22,000원</td></tr>
+                </table>
+                <div id="price3">[상품 구매 금액] : 19,000원 + [배송비] : 3,000 = [총구매액] : <span>22,000원</span></div>
+            </sectrion>
+            <table id="table2">
+                <tr><td></td><td id="tbl1">[상품 구매 금액]:    19,000원</td></tr>
+                <tr><td id="tbl2">고객님의 총 주문 합계 금액입니다</td><td id="tbl1">배송비:    3,000원</td></tr>
+                <tr><td></td><td id="tbl1">총 주문 합계 금액:    21,000원</td></tr>
+            </table>
+            <div id="clear"></div>
+            <div id="orderbtn">
+                <div><img src="img/order_button1.gif" width="150px"></div>
+                <div><img src="img/order_button2.gif" width="150px"></div>
+                <div><img src="img/order_button3.gif" width="150px"></div>
+                <div><img src="img/order_button4.gif" width="150px"></div>
+                <div><img src="img/order_button5.gif" width="150px"></div>
+                <div><img src="img/order_button6.gif" width="150px"></div>
+            </div>
+        </main>
+        <div id="clear"></div>
+        <footer>
+            <div id="footersub"><span>회사소개</span><span>이용안내</span><span>장바구니</span><span>주문조회</span><span>적립금</span><span>이용약관</span><span>개인정보보호정책</span><span>고객센터</span></div>
+            <div id="footermain">
+                <div id="footerlogo"><img src="img/footer_logo.gif"></div>
+                <div id="addr"><img src="img/address.gif"></div>
+                <div id="footersublogo"><img src="img/footer_banner_01.gif"></div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>
