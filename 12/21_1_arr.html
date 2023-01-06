@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        var arrdata = [];
+        function insertArr(){
+            // 1 부터 1000 까지 3의 배수와 7의 배수를 저장하는 함수
+            var i=0;
+            for(var j= 1 ; j < 1000; j++){
+               if(j % 3 === 0 || j % 7 === 0){
+                arrdata[i] = j;
+                i++;
+               }
+            }
+            selectArr();
+        }
+        function selectArr(){
+            // 배열 각 방의 값을 출력 하는 함수
+            for(var i = 0; i <= arrdata.length-1; i++ ){
+                document.write(arrdata[i] + " ");
+            }
+            addArr();
+        }
+        function addArr(){
+            // 7의 배수만 더하는 함수
+            var sum = 0;
+            for(var i = 0; i <= arrdata.length-1; i++){
+                if(arrdata[i] % 7 ===0){
+                    sum += arrdata[i];
+                }
+            }
+            document.write("<br>7의 배수 합계는 : " + sum + "<p/>");
+            document.write("<a href src=21_1_arr.html> 되돌리기</a>")
+        }
+    </script>
+    <button type="button" onclick="insertArr()">배열 객체 생성/출력/연산</button>
+    
+</body>
+</html>
