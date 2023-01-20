@@ -1,332 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        *{margin: 0; padding: 0;font-size: 14px;}
-        #page{
-            width: 1000px; height: 1200px;
-            border: 0px solid red;
-            margin: 0 auto;
-        }
-        a{
-            text-decoration: none;
-        }
-        #main_main a{
-            color: black;
-            font-size: 12px;
-            text-decoration: none;
-        }
-        #main{
-            width: 700px;
-            
-        }
-        li{
-            list-style-type: none;
-        }
-        header{
-            width: 100%;
-            height: 100px;
-        }
-        aside{
-            float: left;
-            width: 200px;
-            height: 1000px;
-
-        }
-        main{
-            height: 900px;
-            width: 100%-300px;
-            margin-left: 300px; 
-        }
-        footer{
-            border-bottom: 1px solid silver;
-            height: 10px;
-        }
-        header li {
-            float: left;
-        }
-        #logo{
-            margin: 10px;
-        }
-        #main_menu{
-            position: absolute;
-            margin-left: 300px;
-            margin-top: 40px
-        }
-        #font_menu1{
-            border: 0px solid red;
-            margin-left: 600px;
-        }
-        aside ul{
-            display: inline-block;
-            margin-top: 20px;
-            width: 200px;
-            height: 150px;
-            border: 1px solid silver;
-            border-radius: 20px;
-            background-color: rgb(248, 246, 246);
-        }
-        #member{
-            font-size: 20px;
-            color: rgb(105, 149, 105);
-            margin: 10px;
-            font-weight: bold;
-        }
-        #login{
-            font-size: 20px;
-            font-weight: bold;
-        }
-        #text1 input{
-            position: absolute;
-            margin-left: 7px;
-            margin-top: 5px;
-            width: 80px;
-            height: 25px;
-        }
-        #text2 input{
-            position: absolute;
-            margin-left: 7px;
-            margin-top: 38px;
-            width: 80px;
-            height: 25px;
-        }
-        #btn_login{
-            position: absolute;
-            margin: 0 0 50px 105px;
-        }
-        #btn_join{
-            position: relative;
-            top: 80px;
-            left: 10px;
-        }
-        #btn_search{
-            position: relative;
-            top:60px;
-            left: 60px;
-        }
-        #ttl_memo{
-            margin-left: 20px;
-            margin-top: 10px;
-        }
-        #icon_blue{
-            
-            font-size: 15px;
-        }
-        #clear{
-            clear: both;
-        }
-        #ttl_memo2{
-            width: 150px;
-            margin: 5px 0 0 30px;
-            border-top: 1px solid silver;
-        }
-        #lastest1{
-            border-bottom: 1px solid silver;
-            width: 350px;
-        }
-        #lastest2{
-            border-bottom: 1px solid silver;
-            width: 350px;
-        }
-        #more1{
-            margin-left: 150px;
-        }
-        #las_test1{
-            float: left;
-        }
-        #rubato4{
-            font-size: 12px;
-            margin: 5px;
-        }
-        #date{
-            margin-left: 10px;
-            font-size: 11px;
-            color: grey;
-        }
-        #rubato{
-            width: 360px;
-            height: 100px;
-        }
-        #boxline{
-            float: left;
-        }
-        #lastest3{
-            margin: 5px;
-            margin-left: 380px;
-            height: 15px;
-            width: 220px;
-            padding-left: 80px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid silver;
-        }
-        #more2{
-            margin-left: 40px;
-        }
-        #bach{
-            margin-top: 20px;
-            margin-left: 400px;
-        }
-        #lastest4{
-            margin-top: 10px;
-            width: 100px;
-        }
-        #gallery{
-            border: 1px solid silver;
-            border-radius: 20px;
-            width: 670px; height: 250px;
-        }
-        #img1{
-            margin: 15px;
-            float: left;
-            width: 189px;  height: 180px;
-            font-size: 12px;
-            text-align: center;
-        }
-        #footerline{
-            height: 100px;
-            width: 750px;
-            padding-top: 50px;
-        }
-        #footer_logo{
-            width: 780px;
-            height: 100px;
-            position: absolute;
-            margin-left: 100px;
-        }
-        footer > div{
-            display:inline-block;
-        }
-        #addr{
-            margin-left: 350px;
-        }
-        #fbt{
-            float: right;
-        }
-        header div{
-            color: white;
-        }
-        #font5{
-            position: absolute;
-            font-size: 15px;
-            margin-top: 26px;
-            margin-left: 340px;
-        }
-        #font1{
-            position: absolute;
-            font-size: 15px;
-            margin-top: 26px;
-            margin-left: 480px;
-        }
-        #font2{
-            position: absolute;
-            font-size: 15px;
-            margin-top: 26px;
-            margin-left: 625px;
-        }
-        #font3{
-            position: absolute;
-            font-size: 15px;
-            margin-top: 26px;
-            margin-left: 750px;
-        }
-        #font4{
-            position: absolute;
-            font-size: 15px;
-            margin-top: 26px;
-            margin-left: 880px;
-        }
-
-    </style>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>클래식기타 커뮤니티</title>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/header.css">
+<link rel="stylesheet" type="text/css" href="css/footer.css">
+<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
-    <div id="page">
-        <header>
-            <ul>
-                <li id="logo"><img src="img/logo.png" style="margin: 0;width: 100%; "></li>
-                <li id="main_menu"><img src="img/main_menu_bg.png" style="width: 700px;"></li>
-               <span id="font_menu1"><span id="font_menu">HOME</span>
-                <span id="font_menu">|</span>
-                <span id="font_menu">LOGIN</span>
-                <span id="font_menu">|</span>
-                <span id="font_menu">JOIN</span>
-                <span id="font_menu">|</span>
-                <span id="font_menu">NOTICE</span>
-                <div id="font5"><a href="http://192.168.64.1:5500/mp02/board_list.html" target="_self"> 자유 게시판</a></div>
-                <div id="font1">기타 연주</div>
-                <div id="font2">공통 구매</div>
-                <div id="font3">연주회 안내</div>
-                <div id="font4">회원 게시판</div>
-            </span>
-            </ul>
-        </header>
-        <aside>
-            <ul>
-                <li><span id="member">Member</span><span id="login">LOGIN</span> </li>
-                <li id="text1"><input type="text"></li>
-                <li id="text2"><input type="text"></li>
-                <li id="btn_login"><img src="img/btn_login.gif" style="width: 90px;"></li>
-                <li id="btn_join"><img src="img/btn_join.gif" style="width: 50px;"></li>
-                <li id="btn_search"><img src="img/btn_search.gif" style="width: 120px;"></li>
-            </ul>
-            <ul>
-                <li id="ttl_memo"><img src="img/ttl_memo.gif" style="width: 60px;"></li>
-                <div id="clear"></div>
-                <div id="ttl_memo2">
-                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
-                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
-                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
-                <li><img src="img/icon_blue.gif"><span id="icon_blue">안녕하세요!</span></li>
-            </div>
-            </ul>
-        </aside>
-        <main>
-            <div id="main_main">
-                <div id="main"><img src="img/main_img.png" style="width: 700px;height: 320px;"></div>
-            <div id="boxline">
-                <div id="lastest1"><span><img src="img/latest1.gif" style="width: 100px;"></span><span id="more1"><img src="img/more.gif" style="width: 40px;"></span></div>
-                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
-                <div id="rubato">
-                    <div id="rubato4">루바토 개편과 사이트 이용..<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="rubato4">루바토 개편과 사이트 이용...<span id="date">2017-09-20</span></div>
-                    <div id="clear"></div>
-                </div>
-                <div id="lastest2"><img src="img/latest2.gif" style="width: 100px;"><span id="more1"><img src="img/more.gif" style="width: 40px;"></div>
-                <div id="las_test1"><img src="img/book_pen.gif" style="height: 100px;"></div>
-                <div id="rubato">
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="rubato4"><a href="#">루바토 개편과 사이트 이용...</a><span id="date">2017-09-20</span></div>
-                    <div id="clear"></div>
-                </div>
-            </div>
-                <div id="lastest3"><img src="img/latest3.gif" style="width: 120px;"><span id="more2"><img src="img/more.gif" style="width: 40px;"></div>
-                    <div id="bach"><img src="img/bach.jpg"></div>
-                    <div id="lastest4"><img src="img/latest4.gif"></div>
-                    <div id="gallery" style="height: 200px;"><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div><div id="img1"><img src="img/img1.jpg">기타 페스티벌 4중주</div></div>
-                    <div id="clear"></div>
-            </div>
-            <div id="clear"></div>
-        </main>
-        <footer>
-            <div id="footerline2"></div>
-            <div id="footerline">
-                <div id="fbt"><img src="img/facebook.gif"><img src="img/blog.gif"><img src="img/twitter.gif"></div>
-                <div id="footer_logo"><img src="img/footer_logo.gif" style="width: 200px; height: 60px;"></div>
-                <div id="addr">
-                    <div>서울시 강남구 삼성동 1234 우: 123-1234</div>
-                    <div>TEL: 031-123-1234 Email : email@domain.com</div>
-                    <div>COPYTIGHT (C) 루바트 ALL RIGHTS RESERVED</div>
-                </div>
-            </div>
-        </footer>
+<div id="wrap">
+<header>
+  <a href="index.html"><img id="logo" src="img/logo.png"></a>
+<nav id="top_menu">
+  HOME | LOGIN | JOIN | NOTICE
+</nav>
+<nav id="main_menu">
+  <ul>
+    <li><a href="board_list.html">자유 게시판</a></li>
+    <li><a href="#">기타 연주</a></li>
+    <li><a href="#">공동 구매</a></li>
+    <li><a href="#">연주회 안내</a></li>
+    <li><a href="#">회원 게시판</a></li>
+  </ul>
+</nav>
+</header> <!-- header -->
+<aside>
+  <article id="login_box">
+    <img id="login_title" src="img/ttl_login.png">
+    <div id="input_button">
+    <ul id="login_input">
+      <li><input type="text"></li>
+      <li><input type="password"></li>
+    </ul>
+    <img id="login_btn" src="img/btn_login.gif">
+    </div> 
+    <div class="clear"></div>
+    <div id="join_search">
+      <img src="img/btn_join.gif">
+      <img src="img/btn_search.gif">
     </div>
-    
+  </article>
+  <article id="guestbook">
+    <div id="guestbook_title">
+      <img src="img/ttl_memo.gif">
+    </div>
+    <ul>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+      <li>안녕하세요!</li>
+    </ul>
+  </article>
+</aside>
+
+<section id="main">
+  <img src="img/main_img.png">
+  <section id="notice_free_youtube">
+    <article id="notice"> 	<!-- 공지사항 -->
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest1.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>
+      <div class="latest_content">
+        <img class="image" src="img/book_pen.gif">
+        <ul class="list">
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>								
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>		
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>	
+          <li>
+            <div class="subject">루바토 개편과 사이트 이용...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>				
+        </ul>							
+      </div>
+    </article>
+    <article id="free"> 	<!—자유 게시판 -->
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest2.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>
+      <div class="latest_content">
+        <img class="image" src="img/book_pen.gif">
+        <ul class="list">
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>		
+          </li>
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>		
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>	
+          <li>
+            <div class="subject">까스통님의 선물인 보드카...</div>
+            <div class="date">2017-09-20</div>
+            <div class="clear"></div>	
+          </li>								
+        </ul>							
+      </div>
+    </article>			
+    <article id="youtube">	    <!—YOUTUBE 동영상 -->		
+      <div class="latest_title">
+        <img class="latest_img" src="img/latest3.gif">
+        <img class="more" src="img/more.gif">
+        <div class="clear"></div>					
+      </div>				
+      <img id="youtube_img" src="img/bach.jpg">
+    </article>
+  </section> <!-- notice_free_youtube -->
+  <section id="gallery">
+    <img src="img/latest4.gif">
+    <div id="gallery_box">
+      <div id="gallery_list">
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+        <div class="items">
+          <ul>
+            <li><img src="img/img1.jpg"></li>
+            <li>기타 페스티벌 4중주</li>
+          </ul>
+        </div>
+      </div> <!-- galley_list -->
+    </div> <!-- gallery_box -->		
+  </section> <!-- gallery -->
+</section> <!-- section main -->
+<div class="clear"></div>
+
+<footer>
+  <img id="footer_logo" src="img/footer_logo.gif">
+  <ul id="address">
+    <li>서울시 강남구 삼성동 1234 우 : 123-1234</li>  
+    <li>TEL : 031-123-1234  Email : email@domain.com</li>
+    <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>
+  </ul>
+  <ul id="footer_sns">
+    <li><img src="img/facebook.gif"></li>  
+    <li><img src="img/blog.gif"></li>
+    <li><img src="img/twitter.gif"></li>
+  </ul>
+</footer> <!-- footer -->
+
+</div> <!-- wrap -->
 </body>
 </html>
