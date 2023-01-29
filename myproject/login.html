@@ -4,88 +4,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <style>
-        #btn{
-            float: right;
-            margin-top: -100px;
+        *{
+            padding: 0;
+            margin: 0 auto;
         }
-        .popup{
-            margin-top: 300px;
-            position: absolute; left: 50%; top: 50%;
-            z-index: 5;
-            transform: translate(-50%,-50%);
-            width: 500px;
-            box-shadow: 0 0 10px rgba( 0 , 0 , 0 , 0.5 );
-            background: #fff; 
-            border-radius: 5px;
-            text-align: right;
-            padding: 20px;
+        #login{
+            font-size: 50px;
+        }
+        li{ list-style: none; }
+        a{ text-decoration: none; } 
+        button{ cursor: pointer; }
+
+        .loginbox{
+            position: absolute;     /* 왼쪽 최상단이 기준점 */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);   /* 정중앙에 위치 하도록 설정 */
+            width: 800px;
+        }
+        .loginbox h2{
+            width: 100%; 
+            height: 100px; line-height: 100px;
+            text-align: center; font-size: 20px;
+            font-weight: normal;
+        }
+        .loginbox form{
+            width: 100%; height: 450px;
+            background-color: #fff;
+            padding: 60px; box-sizing: border-box;
+        }
+        .loginbox fieldset{
+            border: none;
+        }
+        .loginbox legend{
+            position: absolute; left: -999em;
+        }
+        .loginbox label{
+            display: block;
+            font-size: 12px; color: #333;
+            margin-bottom: 10px;
+        }
+        .loginbox input{
+            display: block;
+            width: 100%; height: 50px;
+            margin-bottom: 25px; 
+            border: none; background-color: #ededed;
+            padding: 0 20px; 
             box-sizing: border-box;
-            opacity: 0;
-            transition: all 0.5s;
         }
-        .popup a{
-            text-decoration: none;
-        }
-        .popup:target {
-            opacity: 1;
-        }
-        .popup:target + .dim{
-            opacity: 1;
-            z-index: 2;
-        }
-        .dim{
-            position: fixed; 
-            left: 0;
-            top: 0;
-            z-index: -1;
+
+        .loginbox ul{
             width: 100%;
-            height: 100%;
-            opacity: 0;
-            transition: all 0.5s;
+            text-align: right;
+            margin-bottom: 60px;
         }
-
-
+        .loginbox li{
+            display: inline-block;
+            height: 12px; line-height: 12px;
+        }
+        .loginbox li:last-child{
+            border-left: 1px solid #333;
+            padding-left: 10px; 
+            margin-left: 4px; 
+        }
+        .loginbox a{
+            color: #333; font-size: 12px;
+            position: relative; top: -2px;
+        }
+        .loginbox button{
+            display: block;
+            width: 220px; height: 50px;
+            margin: 0 auto;
+            border: none;
+            background-color: rgb(212, 211, 211);
+            color: rgb(96, 96, 96); font-size: 14px; font-weight: bold;
+        }
+        #logo{
+            text-align: center;
+            margin-top: -130px;
+        }
+        
+        
+        
     </style>
 </head>
 <body>
-    <div class="login">
-        <a class="btn" href="#pop1" id="btn" style="margin-right: 300px;">로그인</a>
-        <a href=""id="btn"style="margin-right: 200px;">회원가입</a>
-        <a href=""id="btn"style="margin-right: 100px;">문의하기</a>
-        <a href=""id="btn">마이페이지</a>
+    <div id="wrap">
+        <div class="loginbox">
+            <form action="#">
+                <legend>로그인 구역</legend>
+                <div id="logo"><a href="index.html"><img src="img/login_logo.PNG" width="300px"></a></div>
+                <div for="loginid">아이디(E-mail)</div>
+                <input type="text" id="loginid" placeholder="아이디(E-mail)을 입력해 주세요">
+                <div for="loginpw">비밀번호</div>
+                <input type="password" id="loginpw" placeholder="비밀번호를 입력해 주세요">
+                <ul>
+                <li><a href="#">아이디/비밀번호찾기</a></li>
+                <li><a href="signup.html">회원가입</a></li>
+                </ul>
+                <button type="submit">LogIn</button>
+            </form>
+        </div>
     </div>
-    <div class="popup" id="pop1">
-        <table class="logos">
-            <tr>
-                <td colspan="3"><input type="text" placeholder="아이디를 입력해 주세요" size="47" class="input" style="height: 50px;"></td>
-            </tr>
-            <tr>
-                <td colspan="3"><input type="password" placeholder="비밀번호를 입력해 주세요"size="47" class="input" style="height: 50px;"></td>
-            </tr>
-            <tr>
-                <td colspan="3"><button style="width: 350px; height: 50px;">로그인</button></td>
-            </tr>
-            <tr>
-                <td>회원가입</td><td colspan="2">아이디/비밀번호 찾기</td>
-            </tr>
-            <tr>
-            <td colspan="3">다른 방법으로 로그인</td>
-            </tr>
-            <tr>
-                <td><img src="../img/facebook.jpg" style="width: 70px; height: 70px;"></td><td colspan="2"><button  style="width: 200px; height: 50px;">페이스 북계정으로 로그인</button></td>
-            </tr>
-            <tr>
-                <td><img src="../img/google.png" style="width: 70px; height: 70px;"></td><td colspan="2"><button style="width: 200px; height: 50px;">구글 계정으로 로그인</button></td>
-            </tr>
-            <tr>
-                <td><img src="../img/KakaoTalk.jpg" style="width: 70px; height: 70px;"></td><td colspan="2"><button  style="width: 200px; height: 50px;">카카오톡계정으로 로그인</button></td>
-            </tr>
-        </table>
-        <a href="">닫기</a>
-    </div>
-    <div class="dim"></div>
-    
 </body>
 </html>
